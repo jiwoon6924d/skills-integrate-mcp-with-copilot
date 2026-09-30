@@ -16,12 +16,28 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.account-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.account-controls button {
+  padding: 7px 10px;
+  font-size: 14px;
 }
 
 header h1 {
@@ -190,6 +206,14 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .account-controls {
+    position: static;
+    justify-content: center;
+    margin-top: 12px;
+  }
 }
 
 footer {
